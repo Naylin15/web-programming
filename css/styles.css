@@ -105,6 +105,12 @@ h2 {
     height: 200px;
 }
 
+/* .subject-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
 .subject figure {
     margin-left: auto;
 }
@@ -122,7 +128,6 @@ h2 {
     align-items: inherit;
     flex-wrap: inherit;
     justify-content: inherit;
-    margin: 0 auto;
 }
 
 footer {
@@ -195,5 +200,7 @@ footer {
 }
 
 @media screen and (max-width: 320px) {
-    
+    .article-image img {
+        width: 150px;
+    }
 }
