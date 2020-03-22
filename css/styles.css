@@ -99,6 +99,10 @@ h2 {
     width: 47%;
 }
 
+.subject-image {
+    text-align: center;
+}
+
 .subject-image img {
     object-fit: cover;
     width: 400px;
