@@ -119,6 +119,7 @@ h2 {
 }
 
 .container {
+    padding: 0 15px;
     display: inherit;
     align-items: inherit;
     flex-wrap: inherit;
@@ -128,11 +129,14 @@ h2 {
 footer {
     background-color: #0F8173;
     padding: 10px 0px;
-    font-family: 'Courgette', cursive;
-    font-weight: bold;
-    font-size: 45px;
     width:  100%;
     text-align: center;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+}
+
+.footer h2 {
+    font-size: 45px;
 }
 
 @media screen and (max-width: 1024px) {
