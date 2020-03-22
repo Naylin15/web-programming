@@ -103,16 +103,7 @@ h2 {
     object-fit: cover;
     width: 400px;
     height: 200px;
-}
-
-/* .subject-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-.subject figure {
-    margin-left: auto;
+    max-width: 100%;
 }
 
 .subject-description {
