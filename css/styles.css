@@ -185,7 +185,7 @@ footer {
     }
 
     .article-paragraph {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     .subject {
@@ -195,6 +195,18 @@ footer {
 
     .subject img {
         width: 100%;
+    }
+
+    .subject-title {
+        font-size: 1em;
+    }
+
+    .subject-paragraph {
+        font-size: 0.8em;
+    }
+
+    .footer h2 {
+        font-size: 1.8em;
     }
 }
 
