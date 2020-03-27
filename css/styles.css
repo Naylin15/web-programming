@@ -150,11 +150,16 @@ footer {
         position: relative;
         height: auto;
         overflow: hidden;
-        padding: 2em;
+        padding: 3em;
     }
 
     .challenge-description {
         z-index: 2;
+        background: rgba(164, 34, 77, 1);
+        color: #fff;
+        padding-left: 1em;
+        margin: auto;
+        text-align: center;
     }
 
     .challenge-description p {
@@ -164,16 +169,18 @@ footer {
     .challenge-image {
         position: absolute;
         z-index: 1;
-        top: 0;
         right: 0;
-        bottom: 0;
+        bottom: -18em;
         left: 0;
         width: 100%;
+        opacity: 0.2;
     }
 }
 
 @media screen and (max-width: 768px) {
-    
+    .challenge-image {
+        bottom: -12em;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -237,10 +244,36 @@ footer {
     .footer h2 {
         font-size: 1.8em;
     }
+
+    .challenge-description {
+        padding-left: 0;
+        width: auto;
+        text-align: center;
+    }
+
+    .challenge-description p {
+        font-size: 0.8em;
+    }
+
+    .challenge-image {
+        bottom: -2em;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .article-image img {
         width: 150px;
+    }
+
+    .challenge-description {
+       font-size: 0.9em;
+    }
+
+    .challenge-description p {
+        font-size: 0.8em;
+    }
+
+    .challenge-image {
+        bottom: 0.4em;
     }
 }
