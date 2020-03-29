@@ -171,7 +171,6 @@ h2 {
 }
 
 .container {
-    padding: 0 15px;
     display: inherit;
     align-items: inherit;
     flex-wrap: inherit;
