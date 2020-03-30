@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Goal: Create a very simple web page in a weekend</title>
 </head>
@@ -33,6 +32,7 @@
             </div>
     </section>
     <section class="tools" id="tools">
+        <h2 class="section-title">Tools</h2>
         <div class="container">
             <article class="tool">
                 <div class="article-description">
@@ -56,6 +56,7 @@
         </div>
     </section>
     <section class="next-subjects">
+        <h2 class="section-title">Next Subjects</h2>
         <div class="container">
             <article class="subject">
                 <figure class="subject-image">
@@ -93,11 +94,21 @@
     </footer>
     <script>
         const menu = document.querySelector('.menu');
-        console.log(menu);
         const burgerButton = document.querySelector('#burger-button');
-        console.log(burgerButton)
+        const resolution = window.matchMedia('screen and (max-width: 479px)');
 
-        burgerButton.addEventListener('click', showHide);
+        resolution.addListener(validation);
+        validation(resolution);
+
+        function validation(event) {
+            
+            if (event.matches) {
+                burgerButton.addEventListener('click', showHide);
+                console.log( "inside the function" + event.matches);
+            } else {
+                burgerButton.removeEventListener('click', showHide);
+            }
+        }
 
         function showHide() {
             menu.classList.toggle('is-active');
