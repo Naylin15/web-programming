@@ -209,9 +209,9 @@ footer {
         z-index: 2;
         background: rgba(164, 34, 77, 1);
         color: #fff;
-        padding-left: 1em;
         margin: auto;
         text-align: center;
+        width: 100%;
     }
 
     .challenge-description p {
@@ -322,10 +322,6 @@ footer {
         text-align: center;
     }
 
-    .challenge-description p {
-        font-size: 0.8em;
-    }
-
     .challenge-image {
         bottom: -2em;
     }
@@ -345,11 +341,7 @@ footer {
     }
 
     .challenge-description {
-       font-size: 0.9em;
-    }
-
-    .challenge-description p {
-        font-size: 0.8em;
+       font-size: 0.8em;
     }
 
     .challenge-image {
